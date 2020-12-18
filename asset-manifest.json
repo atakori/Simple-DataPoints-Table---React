@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Simple-DataPoints-Table---React/static/css/main.7421b405.chunk.css",
+    "main.js": "/Simple-DataPoints-Table---React/static/js/main.629eac69.chunk.js",
+    "main.js.map": "/Simple-DataPoints-Table---React/static/js/main.629eac69.chunk.js.map",
+    "runtime-main.js": "/Simple-DataPoints-Table---React/static/js/runtime-main.76af75de.js",
+    "runtime-main.js.map": "/Simple-DataPoints-Table---React/static/js/runtime-main.76af75de.js.map",
+    "static/css/2.50a9db07.chunk.css": "/Simple-DataPoints-Table---React/static/css/2.50a9db07.chunk.css",
+    "static/js/2.4b6a35d6.chunk.js": "/Simple-DataPoints-Table---React/static/js/2.4b6a35d6.chunk.js",
+    "static/js/2.4b6a35d6.chunk.js.map": "/Simple-DataPoints-Table---React/static/js/2.4b6a35d6.chunk.js.map",
+    "index.html": "/Simple-DataPoints-Table---React/index.html",
+    "precache-manifest.5b6011d6c54d887606b15484f379a55e.js": "/Simple-DataPoints-Table---React/precache-manifest.5b6011d6c54d887606b15484f379a55e.js",
+    "service-worker.js": "/Simple-DataPoints-Table---React/service-worker.js",
+    "static/css/2.50a9db07.chunk.css.map": "/Simple-DataPoints-Table---React/static/css/2.50a9db07.chunk.css.map",
+    "static/css/main.7421b405.chunk.css.map": "/Simple-DataPoints-Table---React/static/css/main.7421b405.chunk.css.map",
+    "static/js/2.4b6a35d6.chunk.js.LICENSE.txt": "/Simple-DataPoints-Table---React/static/js/2.4b6a35d6.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.76af75de.js",
+    "static/css/2.50a9db07.chunk.css",
+    "static/js/2.4b6a35d6.chunk.js",
+    "static/css/main.7421b405.chunk.css",
+    "static/js/main.629eac69.chunk.js"
+  ]
+}
