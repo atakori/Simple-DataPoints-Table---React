@@ -1,0 +1,243 @@
+@import './_colors.scss';
+@import url(//db.onlinewebfonts.com/c/89248b0583721153668df86453b579de?family=Halyard+Text);
+
+* {
+    margin: 0; padding: 0; box-sizing: border-box;
+    font-family: "Halyard Text"
+}
+
+body {
+    background-color: #000;
+    margin: inherit;
+}
+
+// Generic Classes
+
+.black-background{
+    background-color: black;
+}
+
+.white-background {
+    background-color: white;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.no-margin{
+    margin: 0;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.relative {
+    position: relative;
+}
+
+// Header & Loading Screen
+
+#page-header {
+    display: flex;
+    background-color: $lightblue;
+
+    & img {
+        width: 15%;
+        min-width: 150px;
+        padding: 20px;
+    }
+}
+
+#loading-screen-container {
+    width: 40%;
+    margin-top: 100px;
+    position: absolute;
+    left: 30%;
+
+    & img {
+        margin-bottom: 20px;
+    }
+}
+
+//Chronotope Map
+
+#chronotope-map-section {
+    width: 83%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 100px;
+    padding-bottom: 1px;
+}
+
+#chronotope-map-title {
+    color: white;
+    background-color: black;
+    border: 2.5px solid $lightblue;
+    padding-bottom: 5px;
+    padding-left: 5px;
+}
+
+#chronotope-map-container {
+    max-height: 500px;
+    overflow: auto;
+    border-bottom: 1.7px solid $lightblue;
+
+    //Scrollbar
+    &::-webkit-scrollbar {
+        color: $lightblue;
+    }
+    &::-webkit-scrollbar-track {
+        background: lighten($grey,10%);
+        border-radius:10px;
+        opacity: 0.1;
+        width:1px;
+      }
+    
+      
+      &::-webkit-scrollbar-thumb {
+        background: $lightblue;
+        border-radius:10px;
+        opacity: 0.1;
+        width:1px;
+      }
+      
+      &::-webkit-scrollbar-thumb:hover {
+        background: lighten($lightblue, 4%);
+      }
+}
+
+.segment {
+    width: 100%;
+    display: flex;
+    background-color: #fbfbfb;
+
+    & p {
+        display: inline-block;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    & .segment-group-column{
+        width: 1%;
+    }
+    
+    & .segment-name {
+        width: 15%;
+        font-size: 12px;
+    }
+}
+
+.chronotope-data-container{
+    width: 82%;
+    display: inline-block;
+    position: relative;
+    margin-right: 1%;
+    display: flex;
+    align-items: center;
+}
+
+.chronotope-data {
+    position: absolute;
+
+    &:hover {
+        z-index: 1;
+        cursor: pointer;
+    }
+
+    & >span:hover {
+        border-radius: 50%;
+        border: 2px solid $green;
+    }
+}
+
+.highlight-node {
+    border-radius: 50%;
+    border: 2px solid $green;
+    z-index: 1;
+}
+
+.chronotope-node {
+    height: 0.5em;
+    width: 0.5em;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+// ToolTip
+
+#toolTip-container {
+    margin-top: 10px;
+    background-color: white;
+    width: 30%;
+    margin-left: auto;
+    padding: 10px;
+    border-radius: 17px;
+    border: 5px solid $lightblue;
+    margin-bottom: 10px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+//Fading classes
+.fade-out-opacity{
+    opacity:0;
+    transition: opacity 1.5s;
+
+}
+.fade-in-opacity{
+    opacity: 1;
+    transition: opacity 1.5s;
+
+}
+
+.white-background-fadeIn {
+    background-color: white;
+    transition: background-color 1.5s linear;
+}
+
+.show-visible-fade {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 2.5s, opacity 2.5s;
+}
+
+.hide-visible {
+    visibility: hidden;
+    opacity: 0;
+}
+
+// Media Queries
+@media (max-width: 1080px) {
+    #toolTip-container {
+        width:50%;
+        height: inherit;
+    }
+}
+
+@media (max-width: 670px) {
+    #toolTip-container {
+        width:100%;
+        justify-content: center;
+    }
+
+    .segment{
+        min-width: 500px;
+    }
+
+    .segment-name {
+        margin-right: 4%
+    }
+}
+
+@media (max-width: 568px) {
+    #chronotope-map-title {
+        text-align: center;
+    }
+}
